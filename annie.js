@@ -19,7 +19,7 @@
 	// internet explorer version (or `undefined` if not ie)
 	annie.ie = nav.appVersion.search('MSIE') > -1
 		? parse(nav.appVersion.slice(22,26))
-		: void 0;
+		: false;
 
 
 	// window.performance support for more accurate animation timing
@@ -29,15 +29,19 @@
 	// browser vendor (for css/js property prefixing)
 	annie.vendor = (function(){
 
-		var prefixes = ' -ms- -moz- -webkit-'.split(' '),
+		var prefixes = ' o ms moz webkit'.split(' '),
 			style = doc.body.style,
 			n,
+			prefix,
 			property;
 
 		for (n = prefixes.length; n--;) {
-			property = prefixes[n] + 'transform';
-			if (style[property] !== void 0) {
-				return property;
+
+			prefix = prefixes[n];
+			property = prefix !== '' ? '-' + prefix + '-' : prefix;
+
+			if (style[property + 'transform'] !== void 0) {
+				return prefix;
 			}
 		}
 
