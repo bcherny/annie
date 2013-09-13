@@ -23,7 +23,7 @@
 
 
 	// window.performance support for more accurate animation timing
-	annie.performance = win.performance && win.performance.now;
+	annie.performance = !!(win.performance && win.performance.now);
 
 
 	// browser vendor (for css/js property prefixing)
@@ -49,36 +49,29 @@
 
 
 	// requestAnimationFrame (fallback to `setTimeout` anniefill)
-	annie.animationFrame = (function(){
+	annie.requestAnimationFrame = bind(
+			win.requestAnimationFrame
+			|| win[annie.vendor + 'RequestAnimationFrame']
+			|| (function(){
+				var lastTime = 0;
+				return function (callback) {
+					var currTime = +new Date();
+					var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+					var id = setTimeout(function(){ callback(currTime+timeToCall) }, timeToCall);
+					lastTime = currTime + timeToCall;
+					return id;
+				}
+			})()
+		, win);
 
-		var vendor = annie.vendor,
-			request = bind(
-					win.requestAnimationFrame
-					|| win[vendor + 'RequestAnimationFrame']
-					|| (function(){
-						var lastTime = 0;
-						return function (callback) {
-							var currTime = +new Date();
-							var timeToCall = Math.max(0, 16 - (currTime - lastTime));
-							var id = setTimeout(function(){ callback(currTime+timeToCall) }, timeToCall);
-							lastTime = currTime + timeToCall;
-							return id;
-						}
-					})()
-				, win),
-			cancel = bind(
-					win.cancelAnimationFrame
-					|| win[vendor + 'RequestAnimationFrame']
-					|| win[vendor + 'CancelRequestAnimationFrame']
-					|| clearTimeout
-				, win);
 
-		return {
-			request: request,
-			cancel: cancel
-		};
-
-	})();
+	// cancelAnimationFrame
+	annie.cancelAnimationFrame = bind(
+			win.cancelAnimationFrame
+			|| win[annie.vendor + 'RequestAnimationFrame']
+			|| win[annie.vendor + 'CancelRequestAnimationFrame']
+			|| clearTimeout
+		, win);
 
 
 	// CSS3 transform

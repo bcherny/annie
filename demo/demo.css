@@ -4,5 +4,33 @@
   padding: 0;
 }
 body {
-  font: 12px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  background: #eee;
+  font: 16px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+table {
+  border-collapse: collapse;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 700px;
+}
+td,
+th {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  vertical-align: bottom;
+}
+td:first-of-type,
+th:first-of-type {
+  font-weight: bold;
+  text-align: right;
+  width: 200px;
+}
+th {
+  background: #00c797;
+  border: 0;
+  color: #fff;
 }
