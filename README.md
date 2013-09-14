@@ -1,6 +1,6 @@
 # annie
 
-A tiny CSS/animation library for authoring cross-browser code.
+A tiny (675 bytes gzipped) library for authoring cross-browser animations.
 
 ## huh?
 
@@ -11,12 +11,24 @@ Annie returns the following information:
 	ie: Number|false				// internet explorer version (or false)
 	performance: Boolean			// browser supports window.performance
 	vendor: String					// webkit, moz, ie, or o
-	requestAnimationFrame: Function
-	cancelAnimationFrame: Function
-	transform: String|Undefined		// CSS transform property, if supported
+	requestAnimationFrame: Function	// requestAnimationFrame, polyfilled if necessary
+	cancelAnimationFrame: Function	// cancelAnimationFrame, polyfilled if necessary
+	transform: String|undefined		// CSS transform property, if supported
 	supports3d: Boolean				// Whether or not browser supports 3D CSS transforms
 }
 ```
+
+## Sample output
+
+| browser				| vendor | ie		| performance		| transform				| supports3d	|
+|-----------------------|--------|----------|-------------------|-----------------------|---------------|
+| chrome 29	/ OSX		| Webkit | false	| true				| WebkitTransform		| true			|
+| firefox 23 / OSX		| Moz	 | false	| true				| MozTransform			| true			|
+| opera 16 / OSX		| Webkit | false	| true				| WebkitTransform		| true			|
+| safari 6 / iOS6		| Webkit | false	| false				| WebkitTransform		| true			|
+| safari 6 / iOS6		| Webkit | false	| false				| WebkitTransform		| true			|
+| safari 6 / OSX		| Webkit | false	| false				| WebkitTransform		| true			|
+
 
 ## why not modernizr?
 

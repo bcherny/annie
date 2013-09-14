@@ -1,30 +1,35 @@
 {
-	"name": "draggable",
-	"version": "2.0.0",
-	"description": "High performance, cross browser, full featured drag and drop in a tiny (2k gzipped) package",
-	"repository": {
-		"type": "git",
-		"url": ""
-	},
-	"author": "Boris Cherny <boris@performancejs.com>",
-	"contributors": [
-		{
-			"name": "Boris Cherny",
-			"email": "boris@performancejs.com"
-		}
-	],
-	"devDependencies": {
-		"grunt": "~0.4.1",
-		"grunt-contrib-uglify": "~0.2.4",
-		"grunt-contrib": "~0.7.0",
-		"grunt-contrib-concat": "~0.3.0"
-	},
-	"license": "MIT",
-	"readmeFilename": "README.md",
-	"dependencies": {},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/eighttrackmind/draggable.git"
-	},
-	"keywords": ["drag", "drop", "drag and drop", "dragndrop", "move"]
+  "name": "annie",
+  "version": "0.1.0",
+  "description": "A tiny (675 bytes gzipped) library for authoring cross-browser animations",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eighttrackmind/draggable.git"
+  },
+  "author": "Boris Cherny <boris@performancejs.com>",
+  "contributors": [
+    {
+      "name": "Boris Cherny",
+      "email": "boris@performancejs.com"
+    }
+  ],
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-uglify": "~0.2.4"
+  },
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "dependencies": {},
+  "keywords": [
+    "animation",
+    "css",
+    "effects",
+    "requestanimationframe",
+    "animationframe",
+    "performance",
+    "vendor",
+    "prefix",
+    "transform",
+    "3d"
+  ]
 }

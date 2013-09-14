@@ -29,7 +29,7 @@
 	// browser vendor (for css/js property prefixing)
 	annie.vendor = (function(){
 
-		var prefixes = ' o ms moz webkit'.split(' '),
+		var prefixes = ' O Ms Moz Webkit'.split(' '),
 			style = doc.body.style,
 			n,
 			prefix,
@@ -38,9 +38,9 @@
 		for (n = prefixes.length; n--;) {
 
 			prefix = prefixes[n];
-			property = prefix !== '' ? '-' + prefix + '-' : prefix;
+			property = prefix !== '' ? prefix + 'Transform' : 'transform';
 
-			if (style[property + 'transform'] !== void 0) {
+			if (style[property] !== void 0) {
 				return prefix;
 			}
 		}
@@ -77,7 +77,7 @@
 	// CSS3 transform
 	annie.transform = (function() {
 		
-		var property = '-' + annie.vendor + '-transform';
+		var property = annie.vendor + 'Transform';
 
 		if (doc.body.style[property] !== void 0) {
 			return property;
