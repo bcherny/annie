@@ -7,6 +7,7 @@ A tiny (675 bytes gzipped) library for authoring cross-browser animations.
 Annie returns the following information:
 
 ```js
+> annie
 {
 	ie: Number|false				// internet explorer version (or false)
 	performance: Boolean			// browser supports window.performance
@@ -18,18 +19,19 @@ Annie returns the following information:
 }
 ```
 
-## Sample output
+## sample output
 
 | browser				| platform 	| vendor | ie		| performance		| transform				| supports3d	|
 |-----------------------|-----------|--------|----------|-------------------|-----------------------|---------------|
 | chrome 29				| osx		| Webkit | false	| true				| WebkitTransform		| true			|
 | firefox 23			| osx		| Moz	 | false	| true				| MozTransform			| true			|
-| opera 16				| osx		| Webkit | false	| true				| WebkitTransform		| true			|
-| safari 6				| osx		| Webkit | false	| false				| WebkitTransform		| true			|
-| safari 6				| ios		| Webkit | false	| false				| WebkitTransform		| true			|
-| safari 6				| ios		| Webkit | false	| false				| WebkitTransform		| true			|
 | internet explorer 10	| windows	| ms	 | 10		| true				| msTransform			| true			|
-
+| internet explorer 9	| windows	| 
+| opera 11				| windows	| O		 | false	| false				| OTransform			| false			|
+| opera 16				| osx		| Webkit | false	| true				| WebkitTransform		| true			|
+| safari 6				| ios		| Webkit | false	| false				| WebkitTransform		| true			|
+| safari 6				| ios		| Webkit | false	| false				| WebkitTransform		| true			|
+| safari 6				| osx		| Webkit | false	| false				| WebkitTransform		| true			|
 
 
 ## why not modernizr?
