@@ -29,6 +29,10 @@
 	// browser vendor (for css/js property prefixing)
 	annie.vendor = (function(){
 
+		if (annie.ie < 9) {
+			return 'ms';
+		}
+
 		var prefixes = ' O ms Moz Webkit'.split(' '),
 			style = doc.body.style,
 			n,
@@ -93,7 +97,7 @@
 		var transform = annie.transform;
 
 		if (!transform) {
-			return;
+			return false;
 		}
 
 		var body = doc.body,

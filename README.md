@@ -21,17 +21,18 @@ Annie returns the following information:
 
 ## sample output
 
-| browser				| platform 	| vendor | ie		| performance		| transform				| supports3d	|
-|-----------------------|-----------|--------|----------|-------------------|-----------------------|---------------|
-| chrome 29				| osx		| Webkit | false	| true				| WebkitTransform		| true			|
-| firefox 23			| osx		| Moz	 | false	| true				| MozTransform			| true			|
-| internet explorer 10	| windows	| ms	 | 10		| true				| msTransform			| true			|
+| browser				| platform 	| vendor	| ie		| performance		| transform				| supports3d	|
+|-----------------------|-----------|-----------|-----------|-------------------|-----------------------|---------------|
+| chrome 29				| osx		| `Webkit`	| `false`	| `true`				| `WebkitTransform`	| `true`		|
+| firefox 23			| osx		| `Moz`	 	| `false`	| `true`				| `MozTransform`	| `true`		|
+| internet explorer 10	| windows	| `ms`		| `10`		| `true`				| `msTransform`		| `true`		|
 | internet explorer 9	| windows	| 
-| opera 11				| windows	| O		 | false	| false				| OTransform			| false			|
-| opera 16				| osx		| Webkit | false	| true				| WebkitTransform		| true			|
-| safari 6				| ios		| Webkit | false	| false				| WebkitTransform		| true			|
-| safari 6				| ios		| Webkit | false	| false				| WebkitTransform		| true			|
-| safari 6				| osx		| Webkit | false	| false				| WebkitTransform		| true			|
+| internet explorer 8	| windows	| `ms`		| `8`		| `false`				| `undefined`		| `false`		|
+| opera 11				| windows	| `O`		| `false`	| `false`				| `OTransform`		| `false`		|
+| opera 16				| osx		| `Webkit`	| `false`	| `true`				| `WebkitTransform`	| `true`		|
+| safari 6				| ios		| `Webkit`	| `false`	| `false`				| `WebkitTransform`	| `true`		|
+| safari 6				| ios		| `Webkit`	| `false`	| `false`				| `WebkitTransform`	| `true`		|
+| safari 6				| osx		| `Webkit`	| `false`	| `false`				| `WebkitTransform`	| `true`		|
 
 
 ## why not modernizr?
