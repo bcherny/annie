@@ -29,7 +29,7 @@
 	// browser vendor (for css/js property prefixing)
 	annie.vendor = (function(){
 
-		if (annie.ie < 9) {
+		if (annie.ie && annie.ie < 9) {
 			return 'ms';
 		}
 
