@@ -21,9 +21,9 @@ Annie returns the following information:
 
 ## sample output
 
+### modern browsers
 | browser				| platform 	| vendor	| ie		| performance		| transform			| supports3d	|
 |-----------------------|-----------|-----------|-----------|-------------------|-------------------|---------------|
-|* *modern browsers*																								*|
 | chrome 29				| osx		| `Webkit`	| `false`	| `true`			| `WebkitTransform`	| `true`		|
 | firefox 23			| osx		| `Moz`	 	| `false`	| `true`			| `MozTransform`	| `true`		|
 | internet explorer 10	| windows	| `ms`		| `10`		| `true`			| `msTransform`		| `true`		|
@@ -31,7 +31,10 @@ Annie returns the following information:
 | safari 6				| ios		| `Webkit`	| `false`	| `false`			| `WebkitTransform`	| `true`		|
 | safari 6				| ios		| `Webkit`	| `false`	| `false`			| `WebkitTransform`	| `true`		|
 | safari 6				| osx		| `Webkit`	| `false`	| `false`			| `WebkitTransform`	| `true`		|
-|* *legacy browsers*																								*|
+
+### legacy browsers
+| browser				| platform 	| vendor	| ie		| performance		| transform			| supports3d	|
+|-----------------------|-----------|-----------|-----------|-------------------|-------------------|---------------|
 | firefox 12			| windows	| `Moz`		| `false`	| `false`			| `MozTransform`	| `true`		|
 | firefox 10			| windows	| `Moz`		| `false`	| `false`			| `MozTransform`	| `true`		|
 | firefox 8				| windows	| `Moz`		| `false`	| `false`			| `MozTransform`	| `false`		|
@@ -40,7 +43,6 @@ Annie returns the following information:
 | internet explorer 7	| windows	| `ms`		| `7`		| `false`			| `undefined`		| `false`		|
 | opera 11				| windows	| `O`		| `false`	| `false`			| `OTransform`		| `false`		|
 | safari 5				| windows	| `Webkit`	| `false`	| `false`			| `WebkitTransform`	| `true`		|
-
 
 ## why not modernizr?
 
