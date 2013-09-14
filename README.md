@@ -1,6 +1,6 @@
 # annie
 
-A tiny (701 bytes gzipped) library for authoring cross-browser animations.
+A tiny (709 bytes gzipped) library for authoring cross-browser animations.
 
 ## huh?
 

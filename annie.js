@@ -72,7 +72,8 @@
 	// cancelAnimationFrame
 	annie.cancelAnimationFrame = bind(
 			win.cancelAnimationFrame
-			|| win[annie.vendor + 'RequestAnimationFrame']
+			|| win.cancelRequestAnimationFrame
+			|| win[annie.vendor + 'CancelAnimationFrame']
 			|| win[annie.vendor + 'CancelRequestAnimationFrame']
 			|| clearTimeout
 		, win);
