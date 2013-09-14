@@ -20,24 +20,26 @@ Annie returns the following information:
 
 ## Sample output
 
-| browser		| platform 	| vendor | ie		| performance		| transform				| supports3d	|
-|---------------|-----------|--------|----------|-------------------|-----------------------|---------------|
-| chrome 29		| OSX		| Webkit | false	| true				| WebkitTransform		| true			|
-| firefox 23	| OSX		| Moz	 | false	| true				| MozTransform			| true			|
-| opera 16		| OSX		| Webkit | false	| true				| WebkitTransform		| true			|
-| safari 6		| OSX		| Webkit | false	| false				| WebkitTransform		| true			|
-| safari 6		| iOS		| Webkit | false	| false				| WebkitTransform		| true			|
-| safari 6		| iOS		| Webkit | false	| false				| WebkitTransform		| true			|
+| browser				| platform 	| vendor | ie		| performance		| transform				| supports3d	|
+|-----------------------|-----------|--------|----------|-------------------|-----------------------|---------------|
+| chrome 29				| osx		| Webkit | false	| true				| WebkitTransform		| true			|
+| firefox 23			| osx		| Moz	 | false	| true				| MozTransform			| true			|
+| opera 16				| osx		| Webkit | false	| true				| WebkitTransform		| true			|
+| safari 6				| osx		| Webkit | false	| false				| WebkitTransform		| true			|
+| safari 6				| ios		| Webkit | false	| false				| WebkitTransform		| true			|
+| safari 6				| ios		| Webkit | false	| false				| WebkitTransform		| true			|
+| internet explorer 10	| windows	| ms	 | 10		| true				| msTransform			| true			|
+
 
 
 ## why not modernizr?
 
 Annie:
 
-- ... contains an efficiently authored subset of Modernizr's functionality
-- ... is geared towards animation and DOM effects rather than a do-it-all approach
+- contains an efficiently authored subset of Modernizr's functionality
+- is geared towards animation and DOM effects
 
 Modernizr:
 
-- ... is a hefty ~15kb, big for the functionality it offers
-- ... is overkill for most projects
+- is a hefty ~15kb, big for the functionality it offers
+- is overkill for most projects

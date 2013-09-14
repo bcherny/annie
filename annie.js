@@ -18,7 +18,7 @@
 
 	// internet explorer version (or `undefined` if not ie)
 	annie.ie = nav.appVersion.search('MSIE') > -1
-		? parse(nav.appVersion.slice(22,26))
+		? parseInt(nav.appVersion.slice(22,26), 10)
 		: false;
 
 
@@ -29,7 +29,7 @@
 	// browser vendor (for css/js property prefixing)
 	annie.vendor = (function(){
 
-		var prefixes = ' O Ms Moz Webkit'.split(' '),
+		var prefixes = ' O ms Moz Webkit'.split(' '),
 			style = doc.body.style,
 			n,
 			prefix,
