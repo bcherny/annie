@@ -1,10 +1,10 @@
 {
   "name": "annie",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A tiny (701 bytes gzipped) library for authoring cross-browser animations",
   "repository": {
     "type": "git",
-    "url": "https://github.com/eighttrackmind/draggable.git"
+    "url": "https://github.com/eighttrackmind/annie.git"
   },
   "author": "Boris Cherny <boris@performancejs.com>",
   "contributors": [
