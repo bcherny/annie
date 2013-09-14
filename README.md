@@ -32,11 +32,14 @@ Annie returns the following information:
 | safari 6				| ios		| `Webkit`	| `false`	| `false`			| `WebkitTransform`	| `true`		|
 | safari 6				| osx		| `Webkit`	| `false`	| `false`			| `WebkitTransform`	| `true`		|
 |* *legacy browsers*																								*|
+| firefox 12			| windows	| `Moz`		| `false`	| `false`			| `MozTransform`	| `true`		|
 | firefox 10			| windows	| `Moz`		| `false`	| `false`			| `MozTransform`	| `true`		|
+| firefox 8				| windows	| `Moz`		| `false`	| `false`			| `MozTransform`	| `false`		|
 | internet explorer 9	| windows	| `ms`		| `9`		| `false`			| `msTransform`		| `false`		|
 | internet explorer 8	| windows	| `ms`		| `8`		| `false`			| `undefined`		| `false`		|
 | internet explorer 7	| windows	| `ms`		| `7`		| `false`			| `undefined`		| `false`		|
 | opera 11				| windows	| `O`		| `false`	| `false`			| `OTransform`		| `false`		|
+| safari 5				| windows	| `Webkit`	| `false`	| `false`			| `WebkitTransform`	| `true`		|
 
 
 ## why not modernizr?
