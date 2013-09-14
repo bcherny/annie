@@ -20,14 +20,14 @@ Annie returns the following information:
 
 ## Sample output
 
-| browser				| vendor | ie		| performance		| transform				| supports3d	|
-|-----------------------|--------|----------|-------------------|-----------------------|---------------|
-| chrome 29	/ OSX		| Webkit | false	| true				| WebkitTransform		| true			|
-| firefox 23 / OSX		| Moz	 | false	| true				| MozTransform			| true			|
-| opera 16 / OSX		| Webkit | false	| true				| WebkitTransform		| true			|
-| safari 6 / iOS6		| Webkit | false	| false				| WebkitTransform		| true			|
-| safari 6 / iOS6		| Webkit | false	| false				| WebkitTransform		| true			|
-| safari 6 / OSX		| Webkit | false	| false				| WebkitTransform		| true			|
+| browser		| platform 	| vendor | ie		| performance		| transform				| supports3d	|
+|---------------|-----------|--------|----------|-------------------|-----------------------|---------------|
+| chrome 29		| OSX		| Webkit | false	| true				| WebkitTransform		| true			|
+| firefox 23	| OSX		| Moz	 | false	| true				| MozTransform			| true			|
+| opera 16		| OSX		| Webkit | false	| true				| WebkitTransform		| true			|
+| safari 6		| OSX		| Webkit | false	| false				| WebkitTransform		| true			|
+| safari 6		| iOS		| Webkit | false	| false				| WebkitTransform		| true			|
+| safari 6		| iOS		| Webkit | false	| false				| WebkitTransform		| true			|
 
 
 ## why not modernizr?
