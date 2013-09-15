@@ -1,6 +1,6 @@
 {
   "name": "annie",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A super tiny library for authoring cross-browser animations",
   "repository": {
     "type": "git",
