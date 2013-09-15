@@ -1,6 +1,6 @@
 # annie
 
-A tiny (709 bytes gzipped) library for authoring cross-browser animations.
+A super tiny library for authoring cross-browser animations.
 
 ## huh?
 
@@ -10,19 +10,19 @@ Annie returns the following information:
 > annie
 {
 	ie: Number|false				// internet explorer version (or false)
-	performance: Boolean			// browser supports window.performance
 	vendor: String					// webkit, moz, ie, or o
 	requestAnimationFrame: Function	// requestAnimationFrame, polyfilled if necessary
 	cancelAnimationFrame: Function	// cancelAnimationFrame, polyfilled if necessary
 	transform: String|undefined		// CSS transform property, if supported
-	supports3d: Boolean				// Whether or not browser supports 3D CSS transforms
+	3d: Boolean						// Whether or not browser supports 3D CSS transforms
+	performance: Boolean			// browser supports window.performance
 }
 ```
 
 ## sample output
 
 ### modern browsers
-| browser				| platform 	| vendor	| ie		| performance		| transform			| supports3d	|
+| browser				| platform 	| vendor	| ie		| performance		| transform			| 3d			|
 |-----------------------|-----------|-----------|-----------|-------------------|-------------------|---------------|
 | chrome 29				| osx		| `Webkit`	| `false`	| `true`			| `WebkitTransform`	| `true`		|
 | firefox 23			| osx		| `Moz`	 	| `false`	| `true`			| `MozTransform`	| `true`		|
@@ -33,7 +33,7 @@ Annie returns the following information:
 | safari 6				| osx		| `Webkit`	| `false`	| `false`			| `WebkitTransform`	| `true`		|
 
 ### legacy browsers
-| browser				| platform 	| vendor	| ie		| performance		| transform			| supports3d	|
+| browser				| platform 	| vendor	| ie		| performance		| transform			| 3d			|
 |-----------------------|-----------|-----------|-----------|-------------------|-------------------|---------------|
 | firefox 12			| windows	| `Moz`		| `false`	| `false`			| `MozTransform`	| `true`		|
 | firefox 10			| windows	| `Moz`		| `false`	| `false`			| `MozTransform`	| `true`		|

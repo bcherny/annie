@@ -1,7 +1,7 @@
 {
   "name": "annie",
   "version": "0.1.2",
-  "description": "A tiny (709 bytes gzipped) library for authoring cross-browser animations",
+  "description": "A super tiny library for authoring cross-browser animations",
   "repository": {
     "type": "git",
     "url": "https://github.com/eighttrackmind/annie.git"

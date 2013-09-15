@@ -93,7 +93,7 @@
 
 	// 3d animation support flag
 	// based on stackoverflow.com/questions/5661671/detecting-transform-translate3d-support/12621264#12621264
-	annie.supports3d = (function(){
+	annie['3d'] = (function(){
 
 		var transform = annie.transform;
 
